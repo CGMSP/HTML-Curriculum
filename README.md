@@ -31,7 +31,7 @@
 
 ### Notes
 
-* First off, this is what we're making: [Click This](https://free-geek.github.io/HTML-CSS/)
+* First off, this is what we're making: [Click This](https://cgmsp.github.io/template/)
 
 * While it's easy to write out a website in a plain text editor such as Notepad or TextEdit or a text editor made for programming such as Atom, we chose to keep it simple for the class and recommend using [Glitch](https://glitch.com/edit/). Start a project and empty out index.html of any template code that Glitch may have added.
 
