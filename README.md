@@ -33,7 +33,6 @@
 
 * First off, this is what we're making: [Click This](https://cgmsp.github.io/HTML-Curriculum/)
 
-* While it's easy to write out a website in a plain text editor such as Notepad or TextEdit or a text editor made for programming such as Atom, we chose to keep it simple for the class and recommend using [Glitch](https://glitch.com/edit/). Start a project and empty out index.html of any template code that Glitch may have added.
 
 * Modern browsers are very forgiving on what is or isn't included in an HTML document. Browsers would rather guess what you meant than serve up an error or broken webpage. For that reason, most everything we mention is considered *best practices* meaning it's recommended but not required.
 
@@ -47,7 +46,7 @@ Pages tend to start off with four things: the `DOCTYPE` declaration, the `html` 
 
 The `DOCTYPE` tells the browsers how to display the page. There used to be several different `DOCTYPE`s, but as of the release of HTML5, you will almost certainly ever write `<!DOCTYPE html>`. This signals to the browser to render the page using HTML5 standards (the current HTML standard).
 
-The `html` tag is the container for the `head` and `body` containers. It signals to the browser that everything between the tags are HTML. Note that while the `DOCTYPE` declaration didn't have a closing tag, that `html`, `head`, and `body` all have opening and closing tags so you can put stuff between them.
+The `html` tag is the container for the `head` and `body` containers. It signals to the browser that everything between the tags are HTML. Note that while the `DOCTYPE` declaration didn't have a closing tag, that `html`, `head`, and `body` all have opening and closing tags so you can put stuff between them. Tags `<br>` (line break), and `<hr>` (make a big line on the webpage) also don't need a closing tad. This is because the line break or the line doesn't go on forever. However, text ends. This is why tags like `<p>` (paragraph) and headings need closing tags. The `<div>` tag is for dividing the page up, so they need closing tags.
 
 `head` and `body` are the containers for the rest of the content. For information you want the user's browser to know or search engines to know, you use `head`. Content that you want displayed to the person visiting your site, you use `body`. Just remember, if the user is meant to see something it probably goes in the `body`, otherwise it should go in the `head`.
 
@@ -87,11 +86,7 @@ In HTML we have headings too, in fact we have six: `h1`, `h2`, `h3`, `h4`, `h5`,
 
 <body>
 
-  <h1>Recipe Book</h1>
-    <h2>My Famous Gazpacho Recipe</h2>
-      <h3>Ingredients</h3>
-      <h3>Directions</h3>
-    <h2>Links</h2>
+
 
 </body>
 ```
