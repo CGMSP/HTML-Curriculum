@@ -83,58 +83,50 @@ In HTML we have headings too, in fact we have six: `h1`, `h2`, `h3`, `h4`, `h5`,
 
 ```HTML
 <!-- index.html -->
-
+<!DOCTYPE html>
+<html>
+  <head>
 <body>
 
+  <h1 style="font-size:50px">My Website</h1>
+  <p>By Me</p>
 
 
 </body>
+
+</html>
+
 ```
 
 #### Paragraphs
 
 The `p` tag is used very regularly and indicates to the browser that we're writing a *paragraph*. Just like most HTML tags, it has an opening tag and a closing tag with the content in the middle.
 
-```HTML
-<!-- index.html -->
-
-<body>
-
-  <h1>Recipe Book</h1>
-  <p>by Free Geek</p>
-
-    <h2>My Famous Gazpacho Recipe</h2>
-    <p>This is my world famous Gazpacho recipe. It's really easy, delicious, and healthy. Plus it's a great way to cool off in the summer. Put it in tiny glasses and serve them as appetizers at parties!</p>
-
-      <h3>Ingredients</h3>
-      <h3>Directions</h3>
-    <h2>Links</h2>
-
-</body>
-```
 
 #### Images and Attributes
 
 Now it's time to add an image using the `img` tag. `img` is one of those weird tags that doesn't use a closing tag, so you don't have to worry about that. What we will be adding though are __attributes__. Every HTML element can have attributes, and they just tell the browser how to handle the element. For instance `img` will need a `src` (source or location of the image) and `alt` (alternative text that describes the image if it doesn't load or if the user is unable to see the image).
 
+
 ```HTML
 <!-- index.html -->
-
+<!DOCTYPE html>
+<html>
+  <head>
 <body>
 
-  <h1>Recipe Book</h1>
-  <p>by Free Geek</p>
+  <h1 style="font-size:50px">My Website</h1>
+  <p>By Me</p>
+<hr>
+<p>This is an image of me!</p>
+    <img src="https://avatars0.githubuserconte  nt.com/u/49257206?s=460&v=4" alt="Me!" />
 
-  <img src="https://github.com/Free-Geek/HTML-CSS/raw/master/gazpacho.jpg" alt="Image of my favorite recipe: Gazpacho!" />
 
-    <h2>My Famous Gazpacho Recipe</h2>
-    <p>This is my world famous Gazpacho recipe. It's really easy, delicious, and healthy. Plus it's a great way to cool off in the summer. Put it in tiny glasses and serve them as appetizers at parties!</p>
-
-      <h3>Ingredients</h3>
-      <h3>Directions</h3>
-    <h2>Links</h2>
 
 </body>
+
+</html>
+
 ```
 
 #### Lists
@@ -143,49 +135,72 @@ HTML gives us two types of lists: unordered lists (`ul`) and ordered lists (`ol`
 
 ```HTML
 <!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+<body>
 
-<h3>Ingredients</h3>
-  <ul>
-    <li>6 plum tomatoes</li>
-    <li>2 cucumbers</li>
-    <li>2 cloves garlic</li>
-    <li>1 lime</li>
-    <li>1/2 white onion</li>
-    <li>1/3 cup virgin olive oil</li>
-    <li>fresh basil</li>
-    <li>sea salt</li>
-    <li>freshly ground pepper</li>
-  </ul>
+  <h1 style="font-size:50px">My Website</h1>
+  <p>By Me</p>
+<hr>
+<p>This is an image of me!</p>
+    <img src="https://avatars0.githubuserconte  nt.com/u/49257206?s=460&v=4" alt="Me!" />
 
-<h3>Directions</h3>
-  <ol>
-    <li>Roughly chop tomatoes, cucumbers, and onions. Dice garlic. Dump vegetables and olive oil into a blender.</li>
-    <li>Cut lime in half and squeeze juice into the blender.</li>
-    <li>Add a couple leaves of basil and some salt and pepper into the blender.</li>
-    <li>Use the chop setting of your blender to blend the mixture into a chunky yet soupy consistency.</li>
-    <li>Add more salt and pepper to taste.</li>
-    <li>Refrigerate for at least 6 hours, though preferably overnight.</li>
-    <li>Serve cold. It's great with a sprinkle of parmesan, a splash of hot sauce, or a side of crusty bread. Make sure it's hot outside first though!</li>
-  </ol>
+
+    <h3>About Me</h3>
+      <ul>
+        <li>I am this</li>
+        <li>I am that</li>
+        <li>I am good at this</li>
+        <li>But not that</li>
+
+      </ul>
 
 </body>
+
+</html>
+
 ```
 
 #### Links
 
-Now we want to have a list of links for our "Links" section. For links we use the `a` tag which requires a `href` attribute ("Hypertext REFerence") to tell the browser where the link goes. In between the `a` opening and closing tag we add a description of the link. So here we just add links inside of our `li` tags to create a list of links:
+Now we want to have a list of links for our "Links" section. For links we use the `a` tag which requires a `href` attribute ("Hypertext Reference") to tell the browser where the link goes. In between the `a` opening and closing tag we add a description of the link. So here we just add links inside of our `li` tags to create a list of links:
 
 ```HTML
 <!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+<body>
 
-<h2>Links</h2>
-<ul>
-  <li><a href="https://www.github.com">GitHub</a></li>
-  <li><a href="https://www.codecademy.com">Codecademy</a></li>
-  <li><a href="https://www.freecodecamp.com">Free Code Camp</a></li>
-  <li><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></li>
-  <li><a href="http://flukeout.github.io/">CSS Diner</a></li>
-</ul>
+  <h1 style="font-size:50px">My Website</h1>
+  <p>By Me</p>
+<hr>
+<p>This is an image of me!</p>
+    <img src="https://avatars0.githubuserconte  nt.com/u/49257206?s=460&v=4" alt="Me!" />
+
+
+    <h3>About Me</h3>
+      <ul>
+        <li>I am this</li>
+        <li>I am that</li>
+        <li>I am good at this</li>
+        <li>But not that</li>
+
+      </ul>
+
+      <h3>Contact Me</h3>
+      <ul>
+        <li><a href="https://www.github.com/kazmalhotra">GitHub: KazMalhotra</a></li>
+
+        <li><a href="mailto:malhotrak@catlin.edu">Email: malhotrak@catlin.edu</a></li>
+
+      </ul>
+
+
+</body>
+
+</html>
 
 ```
 
@@ -193,67 +208,57 @@ Now we want to have a list of links for our "Links" section. For links we use th
 
 The `div` tag is very important to designing a website even though it doesn't really DO anything. `div` stands for "division" and is just a way for us to group content together and divide it from other content. It's often assigned a *class* name that can be used by CSS to apply a certain type of decoration or *style*. This might seem a little confusing now, but should make sense when we get to CSS.
 
-We'll make a `div` with the class name `container` that wraps around all of the content in the body. Right now our index.html file should look something like this:
+We'll make a `div` with the class name `font` that wraps around everything that specifies the font:
 
 ```HTML
 <!-- index.html -->
-
 <!DOCTYPE html>
 <html>
-
-<head>
-
-</head>
-
+<div class="font">
+  <head>
+  </head>
 <body>
-    <div class="container">
 
-      <h1>Recipe Book</h1>
-      <p>by Free Geek</p>
+  <h1 style="font-size:50px">My Website</h1>
+  <p>By Me</p>
+<hr>
+<p>This is an image of me!</p>
+    <img src="https://avatars0.githubusercontent.com/u/49257206?s=460&v=4" alt="Me!" />
 
-      <img src="https://github.com/Free-Geek/HTML-CSS/raw/master/gazpacho.jpg" alt="Image of my favorite recipe: Gazpacho!" />
 
-      <h2>My Famous Gazpacho Recipe</h2>
-
-      <p>This is my world famous Gazpacho recipe. It's really easy, delicious, and healthy. Plus it's a great way to cool off in the summer. Put it in tiny glasses and serve them as appetizers at parties!</p>
-
-      <h3>Ingredients:</h3>
+    <h3>About Me</h3>
       <ul>
-          <li>6 plum tomatoes</li>
-          <li>2 cucumbers</li>
-          <li>2 cloves garlic</li>
-          <li>1 lime</li>
-          <li>1/2 white onion</li>
-          <li>1/3 cup virgin olive oil</li>
-          <li>fresh basil</li>
-          <li>sea salt</li>
-          <li>freshly ground pepper</li>
+        <li>I am this</li>
+        <li>I am that</li>
+        <li>I am good at this</li>
+        <li>But not that</li>
+
       </ul>
 
-      <h3>Directions:</h3>
-      <ol>
-          <li>Roughly chop tomatoes, cucumbers, and onions. Dice garlic. Dump vegetables and olive oil into a blender.</li>
-          <li>Cut lime in half and squeeze juice into the blender.</li>
-          <li>Add a couple leaves of basil and some salt and pepper into the blender.</li>
-          <li>Use the chop setting of your blender to blend the mixture into a chunky yet soupy consistency.</li>
-          <li>Add more salt and pepper to taste.</li>
-          <li>Refrigerate for at least 6 hours, though preferably overnight.</li>
-          <li>Serve cold. It's great with a sprinkle of parmesan, a splash of hot sauce, or a side of crusty bread. Make sure it's hot outside first though!</li>
-      </ol>
-
-      <h2>Links</h2>
+      <h3>Contact Me</h3>
       <ul>
-          <li><a href="https://www.github.com">GitHub</a></li>
-          <li><a href="https://www.codecademy.com">Codecademy</a></li>
-          <li><a href="https://www.freecodecamp.com">Free Code Camp</a></li>
-          <li><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></li>
-          <li><a href="http://flukeout.github.io/">CSS Diner</a></li>
-      </ul>
+        <li><a href="https://www.github.com/kazmalhotra">GitHub: KazMalhotra</a></li>
 
-    </div>
+        <li><a href="mailto:malhotrak@catlin.edu">Email: malhotrak@catlin.edu</a></li>
+
+      </ul>
+</div>
+
+
+<style>
+.font{
+  font-family: "Sans Serif";
+
+
+}
+
+</style>
+
+
 </body>
 
 </html>
+
 
 ```
 
@@ -301,24 +306,6 @@ Remember how we added a class to the `div`? Well that was so we could select tha
 
 There's no way we can go through all of the CSS rules (just like we can't go through all of the HTML tags); there are way too many of them. The best way to learn is to build! When you want to change something, look up what rule you should use. For this project, we'll use just a few more:
 
-```CSS
-body {
-  background: wheat;
-  margin: 0;
-}
-
-img {
-  width: 100%;
-}
-
-.container {
-  padding: 6px;
-  margin: auto;
-  background: white;
-  max-width: 600px;
-  border: 4px solid seagreen;
-}
-```
 
 We set `margin` to zero so no space between our container `div` and `body` element will occur. Setting `width` to 100% tell the `img` to be as big as it can be, as long as it stays within the container `div`.
 
@@ -328,29 +315,17 @@ This is our `head` so far:
 
 ```HTML
 <!-- index.html -->
+<style>
+.font{
+  font-family: "Sans Serif";
+}
 
-<head>
+.centered{
+  text-align: center
 
-  <style>
-    body {
-      background: wheat;
-      margin: 0;
-    }
+}
 
-    img {
-      width: 100%;
-    }
-
-    .container {
-      padding: 6px;
-      margin: auto;
-      background: white;
-      max-width: 600px;
-      border: 4px solid seagreen;
-    }
-  </style>
-
-</head>
+</style>
 ```
 
 ### Finishing Up
@@ -394,81 +369,56 @@ Here's the final code:
 
 ```HTML
 <!-- index.html -->
-
 <!DOCTYPE html>
 <html>
-
-<head>
-
-    <title>Recipe Book</title>
-
-    <style>
-      body {
-        background: wheat;
-        margin: 0;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      .container {
-        padding: 6px;
-        margin: auto;
-        background: white;
-        max-width: 600px;
-        border: 4px solid seagreen;
-      }
-    </style>
-</head>
-
+<div class="font">
+  <div class="centered">
+  <head>
+  </head>
 <body>
-    <div class="container">
 
-      <h1>Recipe Book</h1>
-      <p>by Free Geek</p>
+  <h1 style="font-size:50px">My Website</h1>
+  <p>By Me</p>
+<hr>
+<p>This is an image of me!</p>
+    <img src="https://avatars0.githubusercontent.com/u/49257206?s=460&v=4" alt="Me!" />
+</div>
+<hr>
 
-      <img src="https://github.com/Free-Geek/HTML-CSS/raw/master/gazpacho.jpg" alt="Image of my favorite recipe: Gazpacho!" />
-
-      <h2>My Famous Gazpacho Recipe</h2>
-
-      <p>This is my world famous Gazpacho recipe. It's really easy, delicious, and healthy. Plus it's a great way to cool off in the summer. Put it in tiny glasses and serve them as appitizers at parties!</p>
-
-      <h3>Ingredients:</h3>
+    <h3>About Me</h3>
       <ul>
-          <li>6 plum tomatoes</li>
-          <li>2 cucumbers</li>
-          <li>2 cloves garlic</li>
-          <li>1 lime</li>
-          <li>1/2 white onion</li>
-          <li>1/3 cup virgin olive oil</li>
-          <li>fresh basil</li>
-          <li>sea salt</li>
-          <li>freshly ground pepper</li>
+        <li>I am this</li>
+        <li>I am that</li>
+        <li>I am good at this</li>
+        <li>But not that</li>
+
       </ul>
 
-      <h3>Directions:</h3>
-      <ol>
-          <li>Roughly chop tomatoes, cucumbers, and onions. Dice garlic. Dump vegetables and olive oil into a blender.</li>
-          <li>Cut lime in half and squeeze juice into the blender.</li>
-          <li>Add a couple leaves of basil and some salt and pepper into the blender.</li>
-          <li>Use the chop setting of your blender to blend the mixture into a chunky yet soupy consistency.</li>
-          <li>Add more salt and pepper to taste.</li>
-          <li>Refrigerate for at least 6 hours, though preferably overnight.</li>
-          <li>Serve cold. It's great with a sprinkle of parmesian, a splash of hot sauce, or a side of crusty bread. Make sure it's hot outside first though!</li>
-      </ol>
-
-      <h2>Links</h2>
+      <h3>Contact Me</h3>
       <ul>
-          <li><a href="https://www.github.com">GitHub</a></li>
-          <li><a href="https://www.codecademy.com">Codecademy</a></li>
-          <li><a href="https://www.freecodecamp.com">Free Code Camp</a></li>
-          <li><a href="https://www.learnhowtoprogram.com/courses">Learn How To Program</a></li>
-          <li><a href="http://flukeout.github.io/">CSS Diner</a></li>
-      </ul>
+        <li><a href="https://www.github.com/kazmalhotra">GitHub: KazMalhotra</a></li>
 
-    </div>
+        <li><a href="mailto:malhotrak@catlin.edu">Email: malhotrak@catlin.edu</a></li>
+
+      </ul>
+</div>
+<hr>
+
+<style>
+.font{
+  font-family: "Sans Serif";
+}
+
+.centered{
+  text-align: center
+
+}
+
+</style>
+
+
 </body>
 
 </html>
+
 ```
